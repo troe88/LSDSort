@@ -22,8 +22,7 @@ public class CoolPrint {
 					.println("##-------------------------------------------------------------------------");
 			flag = false;
 		}
-		System.out.printf("%-7s  %-27s   %-12d   %-12d  %-12d", "##", n, time_lsd,
-				time_sys, length);
+		System.out.printf("%-7s  %-27s   %-12d   %-12d  %-12d", "##", n, time_lsd, time_sys, length);
 		System.out.println();
 	}
 }

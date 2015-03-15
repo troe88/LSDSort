@@ -6,7 +6,7 @@ echo " no maven "
 exit 1
 fi
 
-mvn -Dtest=OneThousandTest,HundredThousandTest,NegHundredThousandTest,MillionTest,NegMillionTest,TenMillionTest,NegTenMillionTest test | awk '/##/ {print}'
+mvn package | awk '/##/ {print}'
 
 
 
