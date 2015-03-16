@@ -2,6 +2,7 @@ package epam.course.LSD;
 
 import java.util.Arrays;
 
+import epam.course.Helper.Helper;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -48,7 +49,7 @@ public class HundredThousandTest extends TestCase {
 		end = System.currentTimeMillis();
 		time_lsd = end - start;
 		
-		CoolPrint.print("QQQ " + getClass().getName(), time_lsd, time_sys, length);
+		Helper.print("QQQ " + getClass().getName(), time_lsd, time_sys, length);
 		
 		assertTrue(Arrays.equals(in, out));
 	}

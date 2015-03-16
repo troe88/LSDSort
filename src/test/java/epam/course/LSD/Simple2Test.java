@@ -2,6 +2,7 @@ package epam.course.LSD;
 
 import java.util.Arrays;
 
+import epam.course.Helper.Helper;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -37,7 +38,7 @@ public class Simple2Test extends TestCase {
 		long start = System.currentTimeMillis();
 		epam.course.LSD.LSD.sort(in);
 		long end = System.currentTimeMillis();
-		CoolPrint.print("SIMPLE",end - start, in.length);
+		Helper.print("SIMPLE",end - start, in.length);
 
 		
 		assertTrue(Arrays.equals(in, out));
