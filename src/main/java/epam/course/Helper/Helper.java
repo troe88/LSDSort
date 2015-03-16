@@ -17,7 +17,7 @@ public class Helper {
 
 		if (flag) {
 			System.out.printf("%-10s  %-20s   %-10s   %-17s  %-24s \n", "##",
-					"name", "LSD time", "Arr.sort time", "length");
+					"Test name", "LSD time(ms)", "Arr.sort time(ms)", "length");
 			System.out
 					.println("##-------------------------------------------------------------------------");
 			flag = false;
