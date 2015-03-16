@@ -20,10 +20,25 @@ public class LSD {
 		}
 	}
 
+	/**
+	 * <p>
+	 * Sort 32-bit integer array by LSD string method.
+	 * </p>
+	 * <p>
+	 * This work was performed on the basis of "Robert Sedgwick, Kevin Wayne" Algorithms for Java ", 
+	 * 4th edition". Method public static void sort (int [] src) implements sorting integer 
+	 * signed and unsigned 32-bit integers.
+	 * </p>
+	 * @author Dmitry Lebedev
+	 * @version 1.0 beta
+	 * @param src
+	 *            Input array
+	 */
 	public static void sort(int[] src) {
 		int W = 32 / BITS_PER_BYTE; // sizeof(int)
 		int R = 256; // один байт кодирует 0-256
-		int MASK = 0xFF; // для каждой терации нужно взять только последние 8 бит
+		int MASK = 0xFF; // для каждой терации нужно взять только последние 8
+							// бит
 		int N = src.length; // длина входящего массива
 		int[] aux = new int[N]; // вспомогательный массив
 
