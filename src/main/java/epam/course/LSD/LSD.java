@@ -6,10 +6,35 @@ public class LSD {
 	private final static int BITS_PER_BYTE = 8;
 	private static int max_ = 10000;
 
+	/**
+	 * <p>
+	 * Set max value of random numbers
+	 * </p>
+	 * 
+	 * @author Dmitry Lebedev
+	 * @version 1.0 beta
+	 * @param max
+	 *            new max_ value
+	 */
 	public static void setMax(int max) {
 		max_ = max;
 	}
 
+	/**
+	 * <p>
+	 * Generate array with random integer numbers
+	 * </p>
+	 * <p>
+	 * Method generate array with random integer signed or/and unsigned numbers.
+	 * </p>
+	 * 
+	 * @author Dmitry Lebedev
+	 * @version 1.0 beta
+	 * @param arr
+	 *            Input array
+	 * @param is_negative
+	 *            if set to true, generate array with signed integer
+	 */
 	public static void genRandArray(int[] arr, boolean is_negative) {
 		Random rand = new Random();
 		for (int i = 0; i < arr.length; i++) {
@@ -25,10 +50,11 @@ public class LSD {
 	 * Sort 32-bit integer array by LSD string method.
 	 * </p>
 	 * <p>
-	 * This work was performed on the basis of "Robert Sedgwick, Kevin Wayne" Algorithms for Java ", 
-	 * 4th edition". Method public static void sort (int [] src) implements sorting integer 
-	 * signed and unsigned 32-bit integers.
+	 * This work was performed on the basis of "Robert Sedgwick, Kevin Wayne"
+	 * Algorithms for Java ", 4th edition". Method public static void sort (int
+	 * [] src) implements sorting integer signed and unsigned 32-bit integers.
 	 * </p>
+	 * 
 	 * @author Dmitry Lebedev
 	 * @version 1.0 beta
 	 * @param src
