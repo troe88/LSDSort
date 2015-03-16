@@ -16,21 +16,25 @@
 
 	<build>
 		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<!-- put your configurations here -->
+				</configuration>
+			</plugin>
+
 			<plugin>
 
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>2.4</version>
 				<configuration>
-					<configuration>
-						<runOrder>filesystem</runOrder>
-					</configuration>
 					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>epam.course.LSD.LSD</mainClass>
-						</manifest>
+						<!-- <manifest> <addClasspath>true</addClasspath> <classpathPrefix>lib/</classpathPrefix> 
+							<mainClass>epam.course.LSD.LSD</mainClass> </manifest> -->
 					</archive>
 				</configuration>
 
