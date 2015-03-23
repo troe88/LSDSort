@@ -11,7 +11,6 @@ public class LSD {
 	 * Set max value of random numbers
 	 * </p>
 	 * 
-	 * @author Dmitry Lebedev
 	 * @version 1.0 beta
 	 * @param max
 	 *            new max_ value
@@ -28,7 +27,6 @@ public class LSD {
 	 * Method generate array with random integer signed or/and unsigned numbers.
 	 * </p>
 	 * 
-	 * @author Dmitry Lebedev
 	 * @version 1.0 beta
 	 * @param arr
 	 *            Input array
@@ -55,7 +53,6 @@ public class LSD {
 	 * [] src) implements sorting integer signed and unsigned 32-bit integers.
 	 * </p>
 	 * 
-	 * @author Dmitry Lebedev
 	 * @version 1.0 beta
 	 * @param src
 	 *            Input array
